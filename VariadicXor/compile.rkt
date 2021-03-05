@@ -39,6 +39,7 @@
     [(Begin e1 e2)   (compile-begin e1 e2 c)]
     [(Let x e1 e2)   (compile-let x e1 e2 c)]
     ;; TODO: Handle variadic bitwise xor
+    [(BitwiseXor es) '()]
     ))
 
 ;; Value -> Asm
